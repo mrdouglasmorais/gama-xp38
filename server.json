@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "label": "Iphone",
+      "price": 6000
+    },
+    {
+      "id": 2,
+      "label": "Samsung",
+      "price": 5000
+    },
+    {
+      "id": 3,
+      "label": "Xiaomi",
+      "price": 1500
+    }
+  ],
+  "persons": [
+    {
+      "name": "Aluno",
+      "email": "aluno@aluno.com",
+      "id": 1
+    },
+    {
+      "name": "Aluno",
+      "email": "aluno@aluno.com",
+      "id": 2
+    },
+    {
+      "name": "Aluno",
+      "email": "aluno@aluno.com",
+      "id": 3
+    }
+  ]
+}

@@ -1,13 +1,7 @@
-import Form from './views/Form';
-import Listings from './views/Listings';
+import Routes from './routes';
 
 function App() {
-  return (
-    <div>
-      <Form />
-      <Listings />
-    </div>
-  );
+  return <Routes />;
 }
 
 export default App;
