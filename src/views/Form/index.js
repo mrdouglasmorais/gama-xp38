@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import api from '../../service/api'
+import { useState, useCallback } from 'react';
+import { useHistory } from 'react-router-dom'
+import api from '../../service/api';
 
 function Form(){
   const [ data, setData ] = useState();
+  const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
     api.post('persons', data).then((response) => {
       if(response.status === 201){
-        alert('Tudo okay')
+        history.push('/listagem')
       }
     })
-  }
+  }, [data, history]);
   
   return(
     <div>
@@ -30,7 +32,6 @@ function Form(){
         />
         <input type="submit" value="Cadastrar" />
       </form>
-      <hr />
     </div>
   )
 }
